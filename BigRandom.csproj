@@ -1,0 +1,43 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <PublishAot>true</PublishAot>
+    <InvariantGlobalization>true</InvariantGlobalization>
+
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageId>Packt.CSdotnet.BigInteger.Random.Extension</PackageId>
+    <PackageVersion>8.0.0.0</PackageVersion>
+    <Title>C# 12 and .NET 8 Shared Library</Title>
+    <Authors>Robin</Authors>
+    <PackageLicenseExpression>
+      MS-PL
+    </PackageLicenseExpression>
+    <PackageProjectUrl>
+      https://github.com/markjprice/cs12dotnet8
+    </PackageProjectUrl>
+    <PackageReadmeFile>readme.md</PackageReadmeFile>
+    <PackageIcon>packt-csdotnet-sharedlibrary.png</PackageIcon>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <PackageReleaseNotes>
+      Example library packaged for NuGet.
+    </PackageReleaseNotes>
+    <Description>
+      Random number generator using BigInteger.
+    </Description>
+    <Copyright>
+      Copyright © 2016-2023 Packt Publishing Limited
+    </Copyright>
+    <PackageTags>random extensions packt csharp dotnet</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="readme.md" PackagePath="\" Pack="true" />
+    <None Include="packt-csdotnet-sharedlibrary.png" PackagePath="\" Pack="true" />
+    <Using Include="System.Console" Static="true" />
+  </ItemGroup>
+
+</Project>
